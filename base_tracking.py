@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 import random
 import math
 import os
+from sklearn.metrics import classification_report
+import pandas as pd
+import seaborn as sns
 
 
 # Experiment results
@@ -17,9 +20,9 @@ if not os.path.exists(artifacts_dir):
 
 ## Experiment deials
 exp_name = 'BaseTracking-1'
-run_name = 'C3Run-1'
-classification_type = 'Multi_3'
-dataset_dir = "/mnt/vol_1/waste_dataset/Multi_3_Class"
+run_name = 'CLR_C7Run-1'
+classification_type = 'Multi_7'
+dataset_dir = "/mnt/vol_1/waste_dataset/Multi_7_Class"
 train_dir = dataset_dir + '/train'
 test_dir = dataset_dir + '/test'
 model_file = artifacts_dir + '/' + classification_type + exp_name + run_name + "waste_clf_model.h5"
@@ -29,7 +32,7 @@ model_file = artifacts_dir + '/' + classification_type + exp_name + run_name + "
 
 
 ## Hyper-parameters
-epochs = 50
+epochs = 30
 batch_size = 96
 valid_split = 0.1
 
@@ -119,7 +122,7 @@ def plot_confusion_matrix(cm, target_names, cmap=None):
     if cmap is None:
         cmap = plt.get_cmap('Blues')
 
-    plt.figure(figsize=(8, 8))
+    plt.figure(figsize=(9, 8))
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
     plt.title('Confusion matrix')
     plt.colorbar()
@@ -162,6 +165,13 @@ for i in os.listdir(test_dir):
 
 plot_confusion_matrix(tf.math.confusion_matrix(true, predictions), classes)
 
+clr = classification_report(true, predictions, target_names=classes, digits=2, output_dict=True)
+print("Classification Report:\n----------------------\n", clr)
+plt.figure(figsize=(10, 8))
+plt.title('Classification Report')
+ax = sns.heatmap(pd.DataFrame(clr).iloc[:-1, :].T, annot=True)
+plt.savefig(artifacts_dir + '/ClassificationReport.png')
+
 ## MLflow Logging
 
 test_data = np.vstack([x for x, _ in test_dataset])
@@ -181,6 +191,7 @@ with mlflow.start_run(run_name=run_name):
     mlflow.log_metric("train_accuracy", train_acc)
     mlflow.log_metric("val_loss", val_loss)
     mlflow.log_metric("val_accuracy", val_acc)
+    mlflow.log_artifact(artifacts_dir+ '/ClassificationReport.png')
     mlflow.log_artifact(artifacts_dir+'/LossAndAccuracy.png')
     mlflow.log_artifact(artifacts_dir + '/ConfusionMatrix.png')
     mlflow.log_artifact(model_file)
