@@ -20,9 +20,9 @@ if not os.path.exists(artifacts_dir):
 
 ## Experiment deials
 exp_name = 'BaseTracking-1'
-run_name = 'CLR_C7Run-1'
-classification_type = 'Multi_7'
-dataset_dir = "/mnt/vol_1/waste_dataset/Multi_7_Class"
+run_name = 'cups_C3Run-1'
+classification_type = 'Multi_3'
+dataset_dir = "/mnt/vol_1/waste_dataset/Multi_3_Class"
 train_dir = dataset_dir + '/train'
 test_dir = dataset_dir + '/test'
 model_file = artifacts_dir + '/' + classification_type + exp_name + run_name + "waste_clf_model.h5"

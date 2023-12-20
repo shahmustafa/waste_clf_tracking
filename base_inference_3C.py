@@ -11,7 +11,7 @@ model = load_model("file:///mnt/vol_1/waste_clf_tracking/mlruns/7994540897087364
 classes = ['Organic Waste', 'Paper and Cardboard', 'Plastic']
 
 
-path = "/home/appy1/Downloads/20230920_105422.jpg"
+path = "/mnt/vol_1/waste_dataset/Mixed_Class/Segregated/plastic/00000124.jpg"
 
 img = tf.keras.preprocessing.image.load_img(path, target_size=(256, 256))
 img_array = tf.keras.preprocessing.image.img_to_array(img)
