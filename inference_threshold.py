@@ -11,7 +11,7 @@ model = load_model("file:///mnt/vol_1/waste_clf_tracking/mlruns/7994540897087364
 classes = ['Organic Waste', 'Paper and Cardboard', 'Plastic']
 
 
-path = "/home/appy1/Downloads/archive (2)/ImageClassesCombinedWithCOCOAnnotations/images_raw/00000182.jpg"
+path = "/mnt/vol_1/waste_dataset/Mixed_Class/Mixed/mixed_109.jpg"
 
 img = tf.keras.preprocessing.image.load_img(path, target_size=(256, 256))
 img_array = tf.keras.preprocessing.image.img_to_array(img)
@@ -35,6 +35,10 @@ print()
 if organic > 83 != pp > 92:
     print("Class: Segregated")
 elif difference > 70:
+    print("Class: Segregated")
+elif organic < 8:
+    print("Class: Segregated")
+elif pp < 8:
     print("Class: Segregated")
 else:
     print("Class: Mixed")
