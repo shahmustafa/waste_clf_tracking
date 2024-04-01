@@ -1,0 +1,25 @@
+artifact_path: waste_clf
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.8.10
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.11.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 2.7.1
+model_uuid: 47a48347034945a6894b92c3baff1821
+run_id: d9e4918ce5d449f281eed9039e0dcdec
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1, 256,
+    256, 3]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    7]}}]'
+  params: null
+utc_time_created: '2023-12-13 07:17:33.422963'

@@ -1,0 +1,16 @@
+artifact_uri: file:///mnt/vol_1/waste_clf_tracking/mlruns/934074781914809124/1cd9bbc68a724c45aaf23ea14edbc9d2/artifacts
+deleted_time: 1702552811569
+end_time: 1702473705575
+entry_point_name: ''
+experiment_id: '934074781914809124'
+lifecycle_stage: deleted
+run_id: 1cd9bbc68a724c45aaf23ea14edbc9d2
+run_name: beautiful-cow-166
+run_uuid: 1cd9bbc68a724c45aaf23ea14edbc9d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702473705564
+status: 3
+tags: []
+user_id: appy1

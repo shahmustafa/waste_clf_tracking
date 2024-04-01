@@ -1,0 +1,16 @@
+artifact_uri: file:///mnt/vol_1/waste_clf_tracking/mlruns/934074781914809124/5c86ec7f33d34eb1b57a9e104915180a/artifacts
+deleted_time: 1702552811569
+end_time: 1702534107649
+entry_point_name: ''
+experiment_id: '934074781914809124'
+lifecycle_stage: deleted
+run_id: 5c86ec7f33d34eb1b57a9e104915180a
+run_name: run-1
+run_uuid: 5c86ec7f33d34eb1b57a9e104915180a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702534107638
+status: 3
+tags: []
+user_id: appy1

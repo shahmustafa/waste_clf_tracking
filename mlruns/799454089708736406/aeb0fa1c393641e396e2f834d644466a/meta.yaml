@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/vol_1/waste_clf_tracking/mlruns/799454089708736406/aeb0fa1c393641e396e2f834d644466a/artifacts
+end_time: 1702711407510
+entry_point_name: ''
+experiment_id: '799454089708736406'
+lifecycle_stage: active
+run_id: aeb0fa1c393641e396e2f834d644466a
+run_name: CLR_C3Run-1
+run_uuid: aeb0fa1c393641e396e2f834d644466a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702711407499
+status: 4
+tags: []
+user_id: appy1

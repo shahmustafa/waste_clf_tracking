@@ -1,0 +1,16 @@
+artifact_uri: file:///mnt/vol_1/waste_clf_tracking/mlruns/934074781914809124/789de18b0cf843b987946493e4827481/artifacts
+deleted_time: 1702552811569
+end_time: 1702473879064
+entry_point_name: ''
+experiment_id: '934074781914809124'
+lifecycle_stage: deleted
+run_id: 789de18b0cf843b987946493e4827481
+run_name: secretive-pig-970
+run_uuid: 789de18b0cf843b987946493e4827481
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702473879053
+status: 3
+tags: []
+user_id: appy1

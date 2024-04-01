@@ -1,0 +1,16 @@
+artifact_uri: file:///mnt/vol_1/waste_clf_tracking/mlruns/399903310268363707/db3a7226a7274357b421d84efc457c20/artifacts
+deleted_time: 1702552814738
+end_time: 1702451053579
+entry_point_name: ''
+experiment_id: '399903310268363707'
+lifecycle_stage: deleted
+run_id: db3a7226a7274357b421d84efc457c20
+run_name: magnificent-flea-116
+run_uuid: db3a7226a7274357b421d84efc457c20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702450889290
+status: 3
+tags: []
+user_id: appy1

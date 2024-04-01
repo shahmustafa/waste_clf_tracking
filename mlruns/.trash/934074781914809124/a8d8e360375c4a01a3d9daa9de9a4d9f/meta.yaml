@@ -1,0 +1,16 @@
+artifact_uri: file:///mnt/vol_1/waste_clf_tracking/mlruns/934074781914809124/a8d8e360375c4a01a3d9daa9de9a4d9f/artifacts
+deleted_time: 1702552811569
+end_time: 1702471989807
+entry_point_name: ''
+experiment_id: '934074781914809124'
+lifecycle_stage: deleted
+run_id: a8d8e360375c4a01a3d9daa9de9a4d9f
+run_name: zealous-squid-864
+run_uuid: a8d8e360375c4a01a3d9daa9de9a4d9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702471989797
+status: 3
+tags: []
+user_id: appy1

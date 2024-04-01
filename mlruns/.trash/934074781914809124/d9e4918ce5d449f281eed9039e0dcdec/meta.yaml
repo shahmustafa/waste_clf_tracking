@@ -1,0 +1,16 @@
+artifact_uri: file:///mnt/vol_1/waste_clf_tracking/mlruns/934074781914809124/d9e4918ce5d449f281eed9039e0dcdec/artifacts
+deleted_time: 1702552811569
+end_time: 1702451865656
+entry_point_name: ''
+experiment_id: '934074781914809124'
+lifecycle_stage: deleted
+run_id: d9e4918ce5d449f281eed9039e0dcdec
+run_name: caring-auk-579
+run_uuid: d9e4918ce5d449f281eed9039e0dcdec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702451853378
+status: 3
+tags: []
+user_id: appy1
